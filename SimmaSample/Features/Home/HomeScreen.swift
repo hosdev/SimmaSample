@@ -7,11 +7,24 @@
 
 import SwiftUI
 
+
+
+
+
+
+
+
 struct HomeScreen: View {
+    
+    @State var showWebView = false
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        WebViewScreen(url: URL(string: "https://ar.shein.com/")!, showWebView: $showWebView)
+            .navigationTitle("Home")
     }
 }
+
+
 
 #Preview {
     HomeScreen()

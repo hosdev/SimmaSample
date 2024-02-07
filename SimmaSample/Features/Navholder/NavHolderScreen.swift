@@ -9,7 +9,15 @@ import SwiftUI
 
 struct NavHolderScreen: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        TabView {
+            HomeScreen().tabItem {
+                Label("Home", systemImage: "homekit")
+            }.tag(0)
+            
+            SettingScreen().tabItem {
+                Label("Settings", systemImage: "person.crop.circle.fill")
+            }.tag(1)
+        }
     }
 }
 
