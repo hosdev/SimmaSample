@@ -17,11 +17,13 @@ struct SheinStoreScreen: View {
     var body: some View {
         VStack(content: {
             
-            if(viewmodel.webView != nil) {
-                viewmodel.webView!.frame(height: .infinity)
-            } else {
-                ProgressView()
-            }
+            Group{
+                if(viewmodel.webView != nil) {
+                    viewmodel.webView!
+                } else {
+                    ProgressView()
+                }
+            }.frame(maxHeight: .infinity)
             
             
             ///Show price only if user in the product page
@@ -51,8 +53,8 @@ struct SheinStoreScreen: View {
                 viewmodel.webView?.goSpesificPath(path: SheinHelper.cartPath)
             }) {
                 HStack {
-                    Text( viewmodel.isInCart ? "Show Cart" : "Checkout")
-                        .font(.title2)
+                    Text( viewmodel.isInCart ? "Checkout" : "Show Cart")
+                        .font(.title2).lineLimit(3)
                     Image(systemName:viewmodel.isInCart ? "arrowshape.turn.up.forward.circle" : "cart.circle" )
                         .font(.system(size: 30))
                 }
