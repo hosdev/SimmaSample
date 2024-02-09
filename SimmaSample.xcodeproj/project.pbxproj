@@ -15,6 +15,10 @@
 		6007BC112B73A51200D024D4 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC102B73A51200D024D4 /* HomeScreen.swift */; };
 		6007BC142B73A54600D024D4 /* SettingScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC132B73A54600D024D4 /* SettingScreen.swift */; };
 		6007BC172B73ACA800D024D4 /* WebViewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC162B73ACA800D024D4 /* WebViewScreen.swift */; };
+		6007BC1B2B74B60600D024D4 /* SheinStoreScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC1A2B74B60600D024D4 /* SheinStoreScreen.swift */; };
+		6007BC1F2B761F6600D024D4 /* SheinHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC1E2B761F6600D024D4 /* SheinHelper.swift */; };
+		6007BC252B7665F300D024D4 /* SheinViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC242B7665F300D024D4 /* SheinViewModel.swift */; };
+		6007BC282B766D6200D024D4 /* SheinItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6007BC272B766D6200D024D4 /* SheinItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,11 @@
 		6007BC102B73A51200D024D4 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		6007BC132B73A54600D024D4 /* SettingScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingScreen.swift; sourceTree = "<group>"; };
 		6007BC162B73ACA800D024D4 /* WebViewScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewScreen.swift; sourceTree = "<group>"; };
+		6007BC182B74023100D024D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		6007BC1A2B74B60600D024D4 /* SheinStoreScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheinStoreScreen.swift; sourceTree = "<group>"; };
+		6007BC1E2B761F6600D024D4 /* SheinHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheinHelper.swift; sourceTree = "<group>"; };
+		6007BC242B7665F300D024D4 /* SheinViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheinViewModel.swift; sourceTree = "<group>"; };
+		6007BC272B766D6200D024D4 /* SheinItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheinItemModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +68,7 @@
 		6007BBFC2B73A31E00D024D4 /* SimmaSample */ = {
 			isa = PBXGroup;
 			children = (
+				6007BC182B74023100D024D4 /* Info.plist */,
 				6007BC0B2B73A49A00D024D4 /* Features */,
 				6007BBFD2B73A31E00D024D4 /* SimmaSampleApp.swift */,
 				6007BBFF2B73A31E00D024D4 /* ContentView.swift */,
@@ -79,6 +89,7 @@
 		6007BC0B2B73A49A00D024D4 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				6007BC192B74B5E700D024D4 /* Stores */,
 				6007BC152B73AC9900D024D4 /* WebView */,
 				6007BC122B73A53400D024D4 /* Setting */,
 				6007BC0D2B73A4AE00D024D4 /* Home */,
@@ -90,7 +101,7 @@
 		6007BC0C2B73A4A500D024D4 /* Navholder */ = {
 			isa = PBXGroup;
 			children = (
-				6007BC0E2B73A4EC00D024D4 /* NavHolderScreen.swift */,
+				6007BC232B7620FB00D024D4 /* Presentation */,
 			);
 			path = Navholder;
 			sourceTree = "<group>";
@@ -98,7 +109,7 @@
 		6007BC0D2B73A4AE00D024D4 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				6007BC102B73A51200D024D4 /* HomeScreen.swift */,
+				6007BC222B7620EB00D024D4 /* Presentatio */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -106,7 +117,7 @@
 		6007BC122B73A53400D024D4 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
-				6007BC132B73A54600D024D4 /* SettingScreen.swift */,
+				6007BC212B7620E100D024D4 /* Presentatio */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -114,9 +125,76 @@
 		6007BC152B73AC9900D024D4 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				6007BC162B73ACA800D024D4 /* WebViewScreen.swift */,
+				6007BC202B7620D300D024D4 /* Presentation */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		6007BC192B74B5E700D024D4 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC262B766D5700D024D4 /* Models */,
+				6007BC1D2B761F4300D024D4 /* Helpers */,
+				6007BC1C2B761F3700D024D4 /* Presentation */,
+			);
+			path = Stores;
+			sourceTree = "<group>";
+		};
+		6007BC1C2B761F3700D024D4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC1A2B74B60600D024D4 /* SheinStoreScreen.swift */,
+				6007BC242B7665F300D024D4 /* SheinViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6007BC1D2B761F4300D024D4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC1E2B761F6600D024D4 /* SheinHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		6007BC202B7620D300D024D4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC162B73ACA800D024D4 /* WebViewScreen.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6007BC212B7620E100D024D4 /* Presentatio */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC132B73A54600D024D4 /* SettingScreen.swift */,
+			);
+			path = Presentatio;
+			sourceTree = "<group>";
+		};
+		6007BC222B7620EB00D024D4 /* Presentatio */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC102B73A51200D024D4 /* HomeScreen.swift */,
+			);
+			path = Presentatio;
+			sourceTree = "<group>";
+		};
+		6007BC232B7620FB00D024D4 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC0E2B73A4EC00D024D4 /* NavHolderScreen.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6007BC262B766D5700D024D4 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6007BC272B766D6200D024D4 /* SheinItemModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -192,9 +270,13 @@
 				6007BC142B73A54600D024D4 /* SettingScreen.swift in Sources */,
 				6007BC112B73A51200D024D4 /* HomeScreen.swift in Sources */,
 				6007BC002B73A31E00D024D4 /* ContentView.swift in Sources */,
+				6007BC1F2B761F6600D024D4 /* SheinHelper.swift in Sources */,
 				6007BC172B73ACA800D024D4 /* WebViewScreen.swift in Sources */,
 				6007BC0F2B73A4EC00D024D4 /* NavHolderScreen.swift in Sources */,
+				6007BC282B766D6200D024D4 /* SheinItemModel.swift in Sources */,
+				6007BC252B7665F300D024D4 /* SheinViewModel.swift in Sources */,
 				6007BBFE2B73A31E00D024D4 /* SimmaSampleApp.swift in Sources */,
+				6007BC1B2B74B60600D024D4 /* SheinStoreScreen.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,6 +413,7 @@
 				DEVELOPMENT_TEAM = GB3YZ5D3TJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimmaSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -360,6 +443,7 @@
 				DEVELOPMENT_TEAM = GB3YZ5D3TJ;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SimmaSample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
